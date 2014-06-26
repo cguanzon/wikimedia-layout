@@ -3,34 +3,29 @@ html{
 	font: sans-serif;
 
 }
-
 .content {
 	top: 0.6em;
 	width: 70%;
-	min-width: 600px;
-	max-width: 1009px;
 	margin: 0 auto;
 	height:100%; 
 	padding:0 2em;
 	position:relative;
 }
-
 .message p{
 	text-align: justify;
 	font-size: 1.23em;
 	line-height: 1.5em;
 }
 
+.message .welcome{
+	font-weight: bold;
+	text-align: right;
+}
+
 a{
 	text-decoration: none;
 	color: #0645AD;
 }
-
-.message p:last-child{
-	text-align: right;
-}
-
-
 .logo{
 	position: relative;
 	float:left;
@@ -38,14 +33,11 @@ a{
 	width: 25%;
 	height:11em;
 }
-
 .logo img{
 	position:absolute;
 	vertical-align: middle;
 	margin: 0 auto;
-
 }
-
 footer {
 	clear: both;
 	width: 70%;
@@ -57,21 +49,51 @@ footer {
 	font-size: 0.79em;
 	margin: 0 auto;
 }
-
 footer p{
 	line-height: 1.8em
 }
-
 footer p span{
 	white-space: nowrap;
 }
-
 footer ul{
 	padding: 0;
 }
-
 footer li{
 	text-align: center;
 	display: inline;
 	margin: 0 1em;
+}
+@media screen and (max-width: 780px){
+	.content {
+		margin: 0 auto;
+		height:100%; 
+		padding:0 2em;
+		position:relative;
+	}
+	.message p{
+		font-size: 1em;
+		line-height: 1.2em;
+	}
+	.message .welcome{
+	font-weight: bold;
+	text-align: center;
+	}
+	.logo{
+		float: left;
+		display: inline-block;
+		width: 50%;
+		margin: auto;
+	}
+}
+@media screen and (max-width: 320px){
+	.logo{
+		float: none;
+		display: block;
+		width: inherit;
+	}
+	footer{
+		border-top: 0.3em solid #AAAAAA;
+		font-size: 0.6em;
+		line-height: 1em
+	}
 }
