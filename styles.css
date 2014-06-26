@@ -1,12 +1,18 @@
+html{
+	font-family: sans-serif;
+	font: sans-serif;
+
+}
+
 .content {
 	top: 0.6em;
 	width: 70%;
 	min-width: 600px;
 	max-width: 1009px;
 	margin: 0 auto;
-	font: sans-serif;
 	height:100%; 
 	padding:0 2em;
+	position:relative;
 }
 
 .message p{
@@ -24,6 +30,7 @@ a{
 	text-align: right;
 }
 
+
 .logo{
 	position: relative;
 	float:left;
@@ -40,13 +47,24 @@ a{
 }
 
 footer {
+	clear: both;
+	width: 70%;
+	height:6em;
 	bottom:0;
 	width:95%;
 	text-align: center;
 	border-top: 0.1em solid #AAAAAA;
-	font-size: 0.8em;
+	font-size: 0.79em;
+	margin: 0 auto;
 }
 
+footer p{
+	line-height: 1.8em
+}
+
+footer p span{
+	white-space: nowrap;
+}
 
 footer li{
 	text-align: center;
