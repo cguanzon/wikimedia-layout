@@ -66,6 +66,10 @@ footer p span{
 	white-space: nowrap;
 }
 
+footer ul{
+	padding: 0;
+}
+
 footer li{
 	text-align: center;
 	display: inline;
